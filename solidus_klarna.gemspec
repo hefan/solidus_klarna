@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/solidus_klarna/version'
+require_relative 'lib/spree/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'solidus_klarna'
