@@ -5,9 +5,9 @@ require 'solidus_klarna'
 
 module SolidusKlarna
   class Engine < Rails::Engine
-    include SolidusSupport::EngineExtensions::Decorators
+    include SolidusSupport::EngineExtensions
 
-    isolate_namespace ::Spree
+    isolate_namespace Spree
 
     engine_name 'solidus_klarna'
 

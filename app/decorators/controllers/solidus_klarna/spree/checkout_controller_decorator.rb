@@ -4,9 +4,6 @@ module SolidusKlarna
   module Spree
     module CheckoutControllerDecorator
 
-      # included do
-      #   before_action :check_redirect_to_klarna
-      # end
       def self.prepended(base)
         base.before_action :check_redirect_to_klarna, only: [:update]
       end
