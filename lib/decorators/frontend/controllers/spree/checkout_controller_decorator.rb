@@ -8,6 +8,7 @@ module Spree
     end
 
     def check_redirect_to_klarna
+puts "*********************************************HALLO"      
       if @order.confirmation_required?
         redirect_klarna_from_confirm_state
       else
