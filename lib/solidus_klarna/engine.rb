@@ -5,7 +5,7 @@ require 'solidus_klarna'
 
 module SolidusKlarna
   class Engine < Rails::Engine
-    include SolidusSupport::EngineExtensions
+    include SolidusSupport::EngineExtensions::Decorators
 
     isolate_namespace Spree
 
