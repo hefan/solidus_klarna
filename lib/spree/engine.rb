@@ -7,7 +7,7 @@ module Spree
   class Engine < Rails::Engine
     include SolidusSupport::EngineExtensions
 
-    isolate_namespace Spree
+    isolate_namespace ::Spree
     engine_name 'solidus_klarna'
 
     initializer "spree.payment_method.add_klarna", after: "spree.register.payment_methods" do |app|
