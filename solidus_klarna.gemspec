@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/solidus_klarna/version'
+require_relative 'lib/spree/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'solidus_klarna'
@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'solidus_core', ['>= 2.0.0', '< 3']
-  spec.add_dependency 'solidus_support', '~> 0.4.0'
+  spec.add_dependency 'solidus_support', '~> 0.5.0'
   spec.add_dependency 'httparty'
 
   spec.add_development_dependency 'solidus_dev_support'
