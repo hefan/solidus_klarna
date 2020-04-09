@@ -3,7 +3,7 @@
 require 'spree/core'
 require 'solidus_klarna'
 
-module Spree
+module SolidusKlarna
   class Engine < Rails::Engine
     include SolidusSupport::EngineExtensions
 

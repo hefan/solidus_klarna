@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-module Spree
+module SolidusKlarna
   module Order
-    module Klarna
+    module KlarnaFeature
 
       def last_payment_method
         last_payment.try(:payment_method)

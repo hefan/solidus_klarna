@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Spree
+module SolidusKlarna
   module CheckoutControllerDecorator
 
     def self.prepended(base)
