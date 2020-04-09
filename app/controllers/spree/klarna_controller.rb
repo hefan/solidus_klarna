@@ -18,8 +18,8 @@ class Spree::KlarnaController < Spree::StoreController
      	return redirect_to '/checkout/payment', status: 302
     end
 
-    order.next
-    if order.complete?
+    if order.can_complete?
+      order.complete
       klarna_payment.capture! if klarna_payment.payment_method.auto_capture?
       session[:order_id] = nil
       flash[:success] = I18n.t("klarna.completed_successfully")

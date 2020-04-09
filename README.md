@@ -27,12 +27,13 @@ Setup
 
 Navigate to Solidus Backend/Settings/Payments and add a new payment method with Provider "Spree::PaymentMethod::Klarna".
 Enter the Configuration key from your klarna merchant account. It should have the form
-Customer Number:Project ID:API key
+USER_ID:PROJECT_ID:API_KEY
 
 The default server url should work.
 You may use a reference prefix and/or suffix if you like to add something before or after the order number used as reference for klarna.
 
 Turn on the test mode in your Klarna merchant backend to do testing.
+Solidus Settings->Stores->Site URL needs to be a valid Url for using Klarna Transactions.
 
 Klarna does only support Euro currency.
 
