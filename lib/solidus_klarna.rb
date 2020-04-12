@@ -3,5 +3,5 @@
 require 'solidus_core'
 require 'solidus_support'
 
-require 'spree/version'
-require 'spree/engine'
+require 'solidus_klarna/version'
+require 'solidus_klarna/engine'

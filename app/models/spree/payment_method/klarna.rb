@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module Spree
-  module PaymentMethod
-    class Klarna < PaymentMethod::Check
+  class PaymentMethod
+    class Klarna < Spree::PaymentMethod::Check
       preference :config_key, :string # config key is USER_ID:PROJECT_ID:API_KEY
       preference :server_url, :string, default: "https://api.sofort.com/api/xml"
       preference :reference_prefix, :string, default: ""
