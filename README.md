@@ -3,7 +3,7 @@ SolidusKlarna
 
 [![CircleCI](https://circleci.com/gh/hefan/solidus_klarna.svg?style=svg)](https://circleci.com/gh/hefan/solidus_klarna)
 
-Extends Solidus for supporting Klarna Payments. An appropriate Merchant Account is required to use it.
+Extends Solidus for supporting Payments via Klarna Direct Bank Transfer. An appropriate Merchant Account is required to use it.
 
 See also https://integration.sofort.com/integrationCenter-eng-DE/content/view/full/2513/
 
