@@ -11,7 +11,9 @@ module SolidusKlarna
     engine_name 'solidus_klarna'
 
     initializer "spree.payment_method.add_klarna", after: "spree.register.payment_methods" do |app|
-      app.config.spree.payment_methods << Spree::PaymentMethod::Klarna
+      app.config.to_prepare do
+        app.config.spree.payment_methods << Spree::PaymentMethod::Klarna
+      end
     end
 
     # use rspec for tests
